@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    {% load staticfiles %}
+    
+  <!-- META -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+  <title>This is a website</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  <!-- Load styling -->
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+
+  <script src="{% static 'vendor.js' %}"></script>
+  <script src="{% static 'app.js' %}"></script>
+  <script src="{% static 'templates.js' %}"></script>
+
+</head>
+<body ng-app="webz">
+{% verbatim %}
+<div ui-view></div>
+{% endverbatim %}
+</body>
+</html>

@@ -7,4 +7,6 @@ urlpatterns = [
     # ex: /posts/5/
     url(r'^full/(?P<article_id>[0-9]+)/$', views.detail, name='detail'),
     url(r'^comment/(?P<article_id>[0-9]+)/$', views.comment, name='comment'),
+    # api
+    url(r'^api/posts', views.all, name='api_all'),
 ]
